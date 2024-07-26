@@ -84,21 +84,6 @@ def open_file():
         plot_chart([cyan_percentage, magenta_percentage, yellow_percentage, black_percentage])
 
 
-# def plot_chart(percentages):
-#     fig, ax = plt.subplots()
-#     labels = ['Cyan', 'Magenta', 'Yellow', 'Black']
-#     colors = ['#00FFFF', '#FF00FF', '#FFFF00', '#000000']
-#     ax.bar(labels, percentages, color=colors)
-#     ax.set_ylabel('Percentage')
-#     ax.set_title('CMYK Color Percentages')
-#
-#     # Clear the previous plot
-#     for widget in chart_frame.winfo_children():
-#         widget.destroy()
-#
-#     canvas = FigureCanvasTkAgg(fig, master=chart_frame)
-#     canvas.draw()
-#     canvas.get_tk_widget().pack()
 def plot_chart(percentages):
     fig, ax = plt.subplots()
     labels = ['Cyan', 'Magenta', 'Yellow', 'Black']
